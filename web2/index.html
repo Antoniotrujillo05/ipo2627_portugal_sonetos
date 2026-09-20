@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lector de sonetos clásicos en lengua española." />
+    <title>Sonetos | Lector de poesía</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/controller.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="./" aria-label="Sonetos, inicio">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          <span>
+            <span class="brand-name">Sonetos</span>
+            <span class="brand-caption">Lecturas del Siglo de Oro</span>
+          </span>
+        </a>
+        <p class="header-note">Una biblioteca breve para leer despacio</p>
+      </div>
+    </header>
+
+    <main class="shell page-layout">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">Colección de poesía</p>
+        <h1 id="page-title">Catorce versos,<br /><em>una voz entera.</em></h1>
+        <p class="intro-copy">Explora una selección de sonetos y encuentra un lugar tranquilo para volver al texto.</p>
+      </section>
+
+      <div class="reader-layout">
+        <aside class="catalog" aria-labelledby="catalog-title">
+          <div class="catalog-heading">
+            <h2 id="catalog-title">La colección</h2>
+            <span id="catalog-count" class="catalog-count"></span>
+          </div>
+          <nav aria-label="Seleccionar soneto">
+            <ol id="sonnet-list" class="sonnet-list"></ol>
+          </nav>
+        </aside>
+
+        <section class="reading-panel" aria-label="Soneto seleccionado">
+          <div id="reader" aria-live="polite"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer shell">
+      <span>Lectura y memoria</span>
+      <span class="footer-rule" aria-hidden="true"></span>
+      <span>Una colección de cinco sonetos</span>
+    </footer>
+  </body>
+</html>
